@@ -1,0 +1,62 @@
+.nav {
+  background-color: #000000;
+  display: i
+}
+
+.nav a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10%;
+  padding: 0.5%;
+  margin: 1%;
+  margin-left: 22%; 
+  background-color: rgba(253, 245, 245, 0.25);
+}
+
+.header {
+  text-align: center;
+  background-image: url("../img/mypic4.jpg");
+  animation-name: zoom;
+  animation-delay: 0.5s;
+  background-repeat: no-repeat;
+  background-size: 110% 120%;
+  border: 20px solid black;
+  border-radius: 50%;
+  background-position: center;
+  padding: 13%;
+  transition:transform 3s;
+}
+
+.glow {
+    animation: glow .5s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 20px red;
+    }
+}
+
+.glow {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header h1{
+  opacity: 1;
+  color: black;
+  font-size: 500%;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0.5)} 
+  to {transform:scale(1)}
+}
+
